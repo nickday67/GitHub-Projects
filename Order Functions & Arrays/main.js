@@ -41,13 +41,26 @@ companies.forEach(function(company){
 const canDrink = ages.filter(age => age >= 21);
 console.log(canDrink);
 
-const retailCompanies = companies.filter(function (company) {
-    if(company.category === 'Retail') {
-        return true;
-    }
-});
+// const retailCompanies = companies.filter(function (company) {
+//     if(company.category === 'Retail') {
+//        return true;
+//     }
+//  });
+
+const retailCompanies = companies.filter(company => company.category === 'Retail');
 console.log(retailCompanies);
+
+// Get 80's companies
+
+const eightiesCompanies = companies.filter(company => (company.start >= 1980 && company.start < 1990));
+console.log(eightiesCompanies);
 
 // map
 // sort
 // reduce
+
+
+
+
+let sumOf = (foo, bar) => foo +bar;
+sumOf (4,5); 
